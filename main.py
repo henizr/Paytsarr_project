@@ -4,6 +4,9 @@ import sys
 from pygame.locals import *
 import random
 import pathlib
+from scr_bright_contr import *
+
+print(ScreenBrightnessControl.get_current_brightness())
 
 
 # Declare constants
@@ -29,11 +32,11 @@ while True:
         elif event.type == pygame.KEYDOWN:
             pass
 
-
+    # actions
 
     window.fill(BACKGROUND_COLOR)
 
-
+    # drawings
 
     pygame.display.update()
     clock.tick(FRAMES_PER_SECOND)
