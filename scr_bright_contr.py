@@ -30,17 +30,18 @@ class ScreenBrightnessControl:
 
 
 
-while True:
-    print(ScreenBrightnessControl.get_current_brightness())
-    answer = input("0: decrease to zero\n1: increase\n2: decrease\n")
-    if answer == "1":
-        ScreenBrightnessControl.increase_brightness()
-    elif answer == "2":
-        ScreenBrightnessControl.decrease()
-    elif answer == "0":
-        ScreenBrightnessControl.set_brightness_to_zero()
+if __name__ == "__main__":
+    while True:
+        print(ScreenBrightnessControl.get_current_brightness())
+        answer = input("0: decrease to zero\n1: increase\n2: decrease\n")
+        if answer == "1":
+            ScreenBrightnessControl.increase_brightness()
+        elif answer == "2":
+            ScreenBrightnessControl.decrease()
+        elif answer == "0":
+            ScreenBrightnessControl.set_brightness_to_zero()
 
-    print("\n")
-    print(ScreenBrightnessControl.get_current_brightness())
-    print("\n")
+        print("\n")
+        print(ScreenBrightnessControl.get_current_brightness())
+        print("\n")
 
